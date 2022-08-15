@@ -1,0 +1,11 @@
+name: FFAByNe
+version: '${project.version}'
+main: me.nek.ffabyne.FFAByNe
+api-version: 1.16
+commands:
+  spawn:
+    description:
+      seks
+  debug:
+    description:
+      debug
