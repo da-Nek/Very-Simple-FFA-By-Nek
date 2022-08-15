@@ -35,18 +35,19 @@ public class DeathListener implements Listener {
 
      */
 
-
-
     public void on(PlayerDeathEvent event){
         Player p = event.getEntity().getPlayer();
         Player k = event.getEntity().getKiller();
-        event.setDeathMessage(ChatColor.AQUA + p.getName() + ChatColor.GRAY + " went underwater due to " + ChatColor.AQUA + k.getName() + ChatColor.GRAY  + " ob " +  ChatColor.RED +k.getHealth());
-        p.getInventory().clear();
-        p.sendTitle("GG, you died", "because " + k.getName() + " on " + k.getHealth(), 5, 20, 10);
-        k.setHealth(20);
+        if (k instanceof Player) {
+            event.setDeathMessage(ChatColor.AQUA + p.getName() + ChatColor.GRAY + " went underwater due to " + ChatColor.AQUA + k.getName() + ChatColor.GRAY + " ob " + ChatColor.RED + k.getHealth());
+            p.getInventory().clear();
+            p.sendTitle("GG, you died", "because " + k.getName() + " on " + k.getHealth(), 5, 20, 10);
+            k.setHealth(20);
 
 
-
+        }else{
+            event.setDeathMessage(p.getName() + " umarł xDD");
+        }
     }
 
 

@@ -27,13 +27,13 @@ Location1Y: 30
 Location1Z: 0
 Location1Name: 'Center'
 
-#Set the locations and name for the first teleport
+#Set the locations and name for the second teleport
 Location2X: -156
 Location2Y: 31
 Location2Z: -17
 Location2Name: 'Bunny'
 
-#Set the locations and name for the first teleport
+#Set the locations and name for the third teleport
 Location3X: 97
 Location3Y: 32
 Location3Z: -136

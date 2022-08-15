@@ -1,4 +1,4 @@
-name: FFAByNe
+name: FFAByNek
 version: '${project.version}'
 main: me.nek.ffabyne.FFAByNe
 api-version: 1.16
