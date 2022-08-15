@@ -17,7 +17,7 @@ public class DeathListener implements Listener {
     public void on(PlayerDeathEvent event){
         Player p = event.getEntity().getPlayer();
         Player k = event.getEntity().getKiller().getPlayer();
-        for (int i = 0; i < 30; i++) {
+
             int rand = (int)(Math.random() * range) + min;
             if (rand == 0){
                 Bukkit.broadcastMessage(ChatColor.AQUA + p.getName() + ChatColor.GRAY + " został zniszczony przez " + ChatColor.AQUA + k.getName() + ChatColor.GRAY  + " na " +  ChatColor.RED +k.getHealth());
@@ -39,7 +39,7 @@ public class DeathListener implements Listener {
             }
 
 
-        }
+
 
         k.setHealth(20);
 
