@@ -1,0 +1,44 @@
+#Welcome to my ffa plugin's config.
+#Please keep in mind that some features are hard coded.
+#This plugin works for 1.16.5+ servers, tho might work for lower versions.
+#+---------------------------------------------------------+
+#|   _   _   ______   _  __    ______   ______             |
+#|  | \ | | |  ____| | |/ /   |  ____| |  ____|     /\     |
+#|  |  \| | | |__    | ' /    | |__    | |__       /  \    |
+#|  | . ` | |  __|   |  <     |  __|   |  __|     / /\ \   |
+#|  | |\  | | |____  | . \    | |      | |       / ____ \  |
+#|  |_| \_| |______| |_|\_\   |_|      |_|      /_/    \_\ |
+#+---------------------------------------------------------+
+
+
+#set the protection and sharpness levels for beast kit
+Protection: 3
+Sharpness: 0
+
+#spawn
+SpawnX: 0
+SpawnY: 150
+SpawnZ: 270
+
+
+#Set the locations and name for the first teleport
+Location1X: 0
+Location1Y: 30
+Location1Z: 0
+Location1Name: 'Center'
+
+#Set the locations and name for the first teleport
+Location2X: -156
+Location2Y: 31
+Location2Z: -17
+Location2Name: 'Bunny'
+
+#Set the locations and name for the first teleport
+Location3X: 97
+Location3Y: 32
+Location3Z: -136
+Location3Name: 'Border'
+
+#Scoreboard
+ScoreboardName: 'vors    '
+ScoreboardIp: '   vorspvp.pl    '

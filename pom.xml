@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>me.nek</groupId>
-    <artifactId>FFAByNe</artifactId>
+    <artifactId>FFAByNek</artifactId>
     <version>1.0-SNAPSHOT`</version>
     <packaging>jar</packaging>
 
-    <name>FFAByNe</name>
+    <name>FFAByNek</name>
 
     <properties>
         <java.version>1.8</java.version>

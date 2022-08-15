@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.scoreboard.*;
 
 public class SB implements Listener {
@@ -16,7 +17,7 @@ public class SB implements Listener {
 
     }
     //Creates a scoreboard on death
-
+    Plugin plugin = FFAByNe.getPlugin(FFAByNe.class);
 
 
     public void createScoreboard(Player p) {
@@ -25,7 +26,7 @@ public class SB implements Listener {
         Scoreboard scoreboard = (Scoreboard) manager.getNewScoreboard();
 
 
-        Objective objective = scoreboard.registerNewObjective("vors", "vors", ChatColor.DARK_GREEN + ChatColor.BOLD.toString() + "vors    ");
+        Objective objective = scoreboard.registerNewObjective("vors", "vors", ChatColor.DARK_GREEN + ChatColor.BOLD.toString() + plugin.getConfig().getString("ScoreboardName"));
 
         objective.setDisplaySlot(DisplaySlot.SIDEBAR);
 
@@ -33,11 +34,11 @@ public class SB implements Listener {
         score.setScore(11);
         Score s2 = objective.getScore("  ");
         s2.setScore(10);
-        Score kills = objective.getScore(ChatColor.DARK_GREEN + "Zabójstwa: " + ChatColor.WHITE + p.getStatistic(Statistic.PLAYER_KILLS));
+        Score kills = objective.getScore(ChatColor.DARK_GREEN + "Kills: " + ChatColor.WHITE + p.getStatistic(Statistic.PLAYER_KILLS));
         kills.setScore(7);
         Score brejk = objective.getScore("      ");
         brejk.setScore(6);
-        Score deaths = objective.getScore(ChatColor.DARK_GREEN + "Śmierci: " + ChatColor.WHITE + p.getStatistic(Statistic.DEATHS));
+        Score deaths = objective.getScore(ChatColor.DARK_GREEN + "Deaths: " + ChatColor.WHITE + p.getStatistic(Statistic.DEATHS));
         deaths.setScore(5);
         Score brejk2 = objective.getScore("      ");
         brejk2.setScore(4);
@@ -47,7 +48,7 @@ public class SB implements Listener {
         s232.setScore(2);
         Score scooore = objective.getScore(ChatColor.GOLD + "--=-=-=-\\/-=-=-=--");
         scooore.setScore(1);
-        Score chujsko = objective.getScore("   vorspvp.xyz   ");
+        Score chujsko = objective.getScore(ChatColor.DARK_GREEN + ChatColor.BOLD.toString() + plugin.getConfig().getString("ScoreboardIp"));
         chujsko.setScore(0);
 
 

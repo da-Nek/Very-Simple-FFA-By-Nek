@@ -6,10 +6,12 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
 
 public class SpawnCommand implements CommandExecutor {
-    Location loc1 = new Location(Bukkit.getWorld("world"),0, 150, 270, 180, 0);
+    Plugin plugin = FFAByNe.getPlugin(FFAByNe.class);
+    Location loc1 = new Location(Bukkit.getWorld("world"),plugin.getConfig().getInt("SpawnX"), plugin.getConfig().getInt("SpawnY"), plugin.getConfig().getInt("SpawnZ"), 180, 0);
 
 
     @Override

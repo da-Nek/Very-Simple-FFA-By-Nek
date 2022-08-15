@@ -6,8 +6,10 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.plugin.Plugin;
 
 public class ClickListener implements Listener {
+    Plugin plugin = FFAByNe.getPlugin(FFAByNe.class);
     Kits beast = new Kits();
 
     @EventHandler
@@ -19,19 +21,22 @@ public class ClickListener implements Listener {
                 switch (e.getCurrentItem().getType()) {
                     case COBBLESTONE:
                         p.closeInventory();
-                        Location loc1 = new Location(Bukkit.getWorld("world"), 0, 30, 0, 0, 0);
+                        Location loc1 = new Location(Bukkit.getWorld("world"), plugin.getConfig().getInt("Location1X"),
+                                plugin.getConfig().getInt("Location1Y"), plugin.getConfig().getInt("Location1Z"), 0, 0);
                         p.teleport(loc1);
                         beast.giveItems(p);
                         break;
                     case WHITE_WOOL:
                         p.closeInventory();
-                        Location loc2 = new Location(Bukkit.getWorld("world"), -156, 31, -17, 0, 0);
+                        Location loc2 = new Location(Bukkit.getWorld("world"), plugin.getConfig().getInt("Location2X"),
+                                plugin.getConfig().getInt("Location2Y"), plugin.getConfig().getInt("Location2Z"), 0, 0);
                         p.teleport(loc2);
                         beast.giveItems(p);
                         break;
                     case BARRIER:
                         p.closeInventory();
-                        Location loc3 = new Location(Bukkit.getWorld("world"), 97, 32, -136, 0, 0);
+                        Location loc3 = new Location(Bukkit.getWorld("world"), plugin.getConfig().getInt("Location3X"),
+                                plugin.getConfig().getInt("Location3Y"), plugin.getConfig().getInt("Location3Z"), 0, 0);
                         p.teleport(loc3);
                         beast.giveItems(p);
                         break;
