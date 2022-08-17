@@ -20,6 +20,7 @@ public class ArmourstandCheck implements Listener {
     public void onInteract(PlayerInteractAtEntityEvent e) {
         if (e.getRightClicked() instanceof ArmorStand) {
             gui.createGUI(e.getPlayer());
+            e.setCancelled(true);
 
 
         }

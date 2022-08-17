@@ -6,6 +6,6 @@ commands:
   spawn:
     description:
       seks
-  debug:
+  creategui:
     description:
       debug
