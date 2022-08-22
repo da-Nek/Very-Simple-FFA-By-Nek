@@ -15,6 +15,7 @@ public final class FFAByNe extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new DeathListener(), this);
         getServer().getPluginManager().registerEvents(new JoinListener(), this);
         getServer().getPluginManager().registerEvents(new AntiHunger(), this);
+        getServer().getPluginManager().registerEvents(new AntiDick(), this);
         getCommand("createGUI").setExecutor(new GUI());
         getCommand("spawn").setExecutor(new SpawnCommand());
         BukkitTask refresh = new ScoreBoardRefreshTask(this).runTaskTimer(this,0L, 85L);
