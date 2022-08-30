@@ -3,9 +3,21 @@ version: '${project.version}'
 main: me.nek.ffabyne.FFAByNe
 api-version: 1.16
 commands:
+  creatememegui:
+    description:
+      xd
   spawn:
     description:
       seks
   creategui:
     description:
       debug
+  stats:
+    description:
+      shreks
+  dc:
+   description:
+     xd
+permissions:
+  ffabyne.meme:
+    ffabyne.lol:

@@ -18,7 +18,12 @@ public final class FFAByNe extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new AntiDick(), this);
         getCommand("createGUI").setExecutor(new GUI());
         getCommand("spawn").setExecutor(new SpawnCommand());
+        getCommand("stats").setExecutor(new StatsCommand());
+        getCommand("creatememegui").setExecutor(new MemeGUI());
+        getCommand("dc").setExecutor(new DiscordCommand());
         BukkitTask refresh = new ScoreBoardRefreshTask(this).runTaskTimer(this,0L, 85L);
+        BukkitTask refresh2 = new DiscordRefreshTask(this).runTaskTimer(this,0L, 6000L);
+        BukkitTask refresh3 = new ReportRefreshTask(this).runTaskTimer(this,0L, 1000L);
 
     }
 

@@ -17,9 +17,10 @@ public class SpawnCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         Player p = (Player) sender;
+        p.getInventory().clear();
+        p.setHealth(20);
+        p.setSaturation(5);
         p.teleport(loc1);
-
-
 
 
         return false;

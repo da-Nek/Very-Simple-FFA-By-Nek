@@ -19,9 +19,10 @@ public class GUI implements CommandExecutor {
     Plugin plugin = FFAByNe.getPlugin(FFAByNe.class);
 
 
+    Kits kits = new Kits();
     Inventory gui;
     public void createGUI(Player p){
-        gui = Bukkit.createInventory(p, 9, ChatColor.AQUA + "FFA BY NEK");
+        gui = Bukkit.createInventory(p, 9, ChatColor.AQUA + "VORS.PL");
 
         ItemStack center = new ItemStack(Material.COBBLESTONE);
         ItemMeta centerM = center.getItemMeta();
@@ -49,10 +50,14 @@ public class GUI implements CommandExecutor {
     }
 
 
+
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         Player p = (Player) sender;
         createGUI(p);
+        p.getInventory().clear();
+        kits.giveItems(p);
+        p.setSaturation(5);
         return false;
     }
 }

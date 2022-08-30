@@ -24,26 +24,22 @@ public class ClickListener implements Listener {
                         Location loc1 = new Location(Bukkit.getWorld("world"), plugin.getConfig().getInt("Location1X"),
                                 plugin.getConfig().getInt("Location1Y"), plugin.getConfig().getInt("Location1Z"), 0, 0);
                         p.teleport(loc1);
-                        beast.giveItems(p);
                         break;
                     case WHITE_WOOL:
                         p.closeInventory();
                         Location loc2 = new Location(Bukkit.getWorld("world"), plugin.getConfig().getInt("Location2X"),
                                 plugin.getConfig().getInt("Location2Y"), plugin.getConfig().getInt("Location2Z"), 0, 0);
                         p.teleport(loc2);
-                        beast.giveItems(p);
                         break;
                     case BARRIER:
                         p.closeInventory();
                         Location loc3 = new Location(Bukkit.getWorld("world"), plugin.getConfig().getInt("Location3X"),
                                 plugin.getConfig().getInt("Location3Y"), plugin.getConfig().getInt("Location3Z"), 0, 0);
                         p.teleport(loc3);
-                        beast.giveItems(p);
                         break;
 
                 }
-
-
+                p.setSaturation(5);
                 e.setCancelled(true);
             } catch (Exception exception) {
                 p.sendMessage("chujsko");

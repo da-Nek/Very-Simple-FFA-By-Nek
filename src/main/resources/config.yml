@@ -13,7 +13,7 @@
 
 #set the protection and sharpness levels for beast kit
 Protection: 3
-Sharpness: 0
+Unbreaking: 0
 
 #spawn
 SpawnX: 0
