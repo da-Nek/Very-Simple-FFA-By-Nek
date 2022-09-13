@@ -35,7 +35,7 @@ public class DeathListener implements Listener {
             Player killer = player.getKiller();
             player.getInventory().clear();
             player.sendTitle("GG", ChatColor.RED + "❤ " + df.format(killer.getHealth()), 5, 20, 10);
-            event.setDeathMessage(ChatColor.AQUA + player.getDisplayName() + ChatColor.GRAY + " was destroyed by " + ChatColor.AQUA + killer.getDisplayName() + ChatColor.RED + " ❤ " + df.format(killer.getHealth()));
+            event.setDeathMessage(ChatColor.AQUA + player.getDisplayName() + ChatColor.GRAY + " został zabity przez " + ChatColor.AQUA + killer.getDisplayName() + ChatColor.RED + " ❤ " + df.format(killer.getHealth()));
             killer.setHealth(20);
             killer.setSaturation(5);
         }

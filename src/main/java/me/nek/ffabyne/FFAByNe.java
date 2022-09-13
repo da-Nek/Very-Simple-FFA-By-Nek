@@ -11,7 +11,6 @@ public final class FFAByNe extends JavaPlugin {
         saveDefaultConfig();
 
         getServer().getPluginManager().registerEvents(new ClickListener(), this);
-        getServer().getPluginManager().registerEvents(new ArmourstandCheck(), this);
         getServer().getPluginManager().registerEvents(new DeathListener(), this);
         getServer().getPluginManager().registerEvents(new JoinListener(), this);
         getServer().getPluginManager().registerEvents(new AntiHunger(), this);

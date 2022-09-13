@@ -34,11 +34,11 @@ public class SB implements Listener {
         score.setScore(11);
         Score s2 = objective.getScore("  ");
         s2.setScore(10);
-        Score kills = objective.getScore(ChatColor.DARK_GREEN + "Kills: " + ChatColor.WHITE + p.getStatistic(Statistic.PLAYER_KILLS));
+        Score kills = objective.getScore(ChatColor.DARK_GREEN + "Zabójstwa: " + ChatColor.WHITE + p.getStatistic(Statistic.PLAYER_KILLS));
         kills.setScore(7);
         Score brejk = objective.getScore("      ");
         brejk.setScore(6);
-        Score deaths = objective.getScore(ChatColor.DARK_GREEN + "Deaths: " + ChatColor.WHITE + p.getStatistic(Statistic.DEATHS));
+        Score deaths = objective.getScore(ChatColor.DARK_GREEN + "Śmierci: " + ChatColor.WHITE + p.getStatistic(Statistic.DEATHS));
         deaths.setScore(5);
         Score brejk2 = objective.getScore("      ");
         brejk2.setScore(4);
