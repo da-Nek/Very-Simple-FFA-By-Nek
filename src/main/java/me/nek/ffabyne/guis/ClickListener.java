@@ -1,5 +1,7 @@
-package me.nek.ffabyne;
+package me.nek.ffabyne.guis;
 
+import me.nek.ffabyne.FFAByNe;
+import me.nek.ffabyne.kits.Kits;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;

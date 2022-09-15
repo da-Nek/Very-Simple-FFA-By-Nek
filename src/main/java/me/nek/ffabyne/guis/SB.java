@@ -1,5 +1,6 @@
-package me.nek.ffabyne;
+package me.nek.ffabyne.guis;
 
+import me.nek.ffabyne.FFAByNe;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Statistic;

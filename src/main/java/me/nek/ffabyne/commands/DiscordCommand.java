@@ -1,4 +1,4 @@
-package me.nek.ffabyne;
+package me.nek.ffabyne.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

@@ -1,4 +1,4 @@
-package me.nek.ffabyne;
+package me.nek.ffabyne.misclisteners;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

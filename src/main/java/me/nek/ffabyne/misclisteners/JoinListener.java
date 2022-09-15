@@ -1,5 +1,6 @@
-package me.nek.ffabyne;
+package me.nek.ffabyne.misclisteners;
 
+import me.nek.ffabyne.FFAByNe;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;

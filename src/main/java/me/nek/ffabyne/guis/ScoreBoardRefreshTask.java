@@ -1,5 +1,7 @@
-package me.nek.ffabyne;
+package me.nek.ffabyne.guis;
 
+import me.nek.ffabyne.FFAByNe;
+import me.nek.ffabyne.guis.SB;
 import org.bukkit.Bukkit;
 import org.bukkit.scheduler.BukkitRunnable;
 

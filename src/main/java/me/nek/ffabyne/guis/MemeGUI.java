@@ -1,5 +1,6 @@
-package me.nek.ffabyne;
+package me.nek.ffabyne.guis;
 
+import me.nek.ffabyne.kits.Kits;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
